@@ -1,0 +1,84 @@
+.what {
+
+    &__wrapper {
+        margin: 50px 0 200px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(3, 200px);
+        gap: 20px;
+        grid-template-areas:
+            "macbook macbook ipad imac"
+            "macbook macbook iphone watch"
+            "playstation xbox iphone airpods";
+    }
+
+    &__item {
+        background-color: $gray-color;
+        border-radius: 20px;
+        padding: 25px 0 0 35px;
+        background-repeat: no-repeat;
+
+        &-title {
+            font-family: $first-font-family;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 150%;
+            color: rgba(0, 0, 0, 0.8);
+        }
+    }
+}
+
+.macbook {
+    grid-area: macbook;
+    background-image: url('../../../images/what/macbook.png');
+    background-position: center;
+}
+
+.iphone {
+    grid-area: iphone;
+    background-image: url('../../../images/what/iphone.png');
+    background-position: right;
+
+}
+
+.ipad {
+    grid-area: ipad;
+    background-image: url('../../../images/what/ipad.png');
+    background-position: right;
+
+}
+
+.imac {
+    grid-area: imac;
+    background-image: url('../../../images/what/imac.png');
+    background-position: right;
+
+}
+
+.watch {
+    grid-area: watch;
+    background-image: url('../../../images/what/watch.png');
+    background-position: bottom;
+
+}
+
+.airpods {
+    grid-area: airpods;
+    background-image: url('../../../images/what/airpods.png');
+    background-position: right;
+
+}
+
+.xbox {
+    grid-area: xbox;
+    background-image: url('../../../images/what/xbox.png');
+    background-position: right;
+
+}
+
+.playstation {
+    grid-area: playstation;
+    background-image: url('../../../images/what/playstation.png');
+
+}

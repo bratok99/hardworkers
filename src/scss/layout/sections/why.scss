@@ -1,0 +1,79 @@
+.why {
+    &__wrapper {
+        display: flex;
+        margin: 50px 0 95px;
+    }
+
+    &__item {
+        position: relative;
+        z-index: -1;
+        padding: 27px 20px 10px;
+        border: 1px solid $first-color;
+        border-bottom: none;
+        border-radius: 20px 20px 0 0;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 25px;
+            left: -1px;
+            width: 1px;
+            height: 100%;
+            background-color: #fff;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 25px;
+            right: -1px;
+            width: 1px;
+            height: 100%;
+            background-color: #fff;
+        }
+
+
+
+
+
+        &-number {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $first-color;
+            border-radius: 5px;
+            font-family: $first-font-family;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 130%;
+            color: $white-color;
+        }
+
+        &-title {
+            font-family: $first-font-family;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 130%;
+            color: $first-color;
+            margin-bottom: 10px;
+        }
+
+        &-desc {
+            font-family: $first-font-family;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 130%;
+            color: $black-color;
+        }
+    }
+}
+
+.why__item:last-child .why__item-border {
+    width: calc(100% + 4px);
+}

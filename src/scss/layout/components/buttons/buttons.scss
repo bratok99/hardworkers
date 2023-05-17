@@ -1,0 +1,44 @@
+$primary-btn-background-color: $first-color;
+$primary-btn-font-size: 16px;
+$primary-btn-font-weight: 700;
+$primary-btn-font-style: normal;
+$primary-btn-line-height: 130%;
+$primary-btn-font-color: $white-color;
+$primary-btn-font-family: $first-font-family;
+$primary-btn-border-radius: 10px;
+$primary-btn-padding: 18px 32px;
+
+$secondary-btn-background-color: $white-color;
+$secondary-btn-font-size: 16px;
+$secondary-btn-font-weight: 700;
+$secondary-btn-font-style: normal;
+$secondary-btn-line-height: 130%;
+$secondary-btn-font-color: $black-color;
+$secondary-btn-font-family: $first-font-family;
+$secondary-btn-border-radius: 10px;
+$secondary-btn-padding: 18px 76px;
+
+
+.primary-btn {
+    font-family: $primary-btn-font-family;
+    font-style: $primary-btn-font-style;
+    font-size: $primary-btn-font-size;
+    line-height: $primary-btn-line-height;
+    font-weight: $primary-btn-font-weight;
+    border-radius: $primary-btn-border-radius;
+    background-color: $primary-btn-background-color;
+    color: $primary-btn-font-color;
+    padding: $primary-btn-padding;
+}
+
+.secondary-btn {
+    font-family: $secondary-btn-font-family;
+    font-style: $secondary-btn-font-style;
+    font-size: $secondary-btn-font-size;
+    line-height: $secondary-btn-line-height;
+    font-weight: $secondary-btn-font-weight;
+    border-radius: $secondary-btn-border-radius;
+    background-color: $secondary-btn-background-color;
+    color: $secondary-btn-font-color;
+    padding: $secondary-btn-padding;
+}

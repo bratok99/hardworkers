@@ -1,0 +1,5 @@
+<svg width="37" height="23" viewBox="0 0 37 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="4" y="1" width="30" height="18" rx="3" stroke="white"/>
+<rect width="35" height="3" rx="1.5" transform="matrix(1 0 0 -1 1 22)" stroke="white"/>
+<path d="M18 3H20" stroke="white" stroke-linecap="round"/>
+</svg>

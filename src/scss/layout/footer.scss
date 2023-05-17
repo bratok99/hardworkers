@@ -1,0 +1,90 @@
+.footer {
+  background-color: $first-color;
+  padding: 70px 0;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    max-width: 500px;
+  }
+
+  &__logo {
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    font-family: $second-font-family;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 120%;
+    color: $white-color;
+    margin-bottom: 20px;
+  }
+
+  &__data {
+    margin-bottom: 20px;
+  }
+
+  &__address {
+    font-family: $second-font-family;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135%;
+    color: $white-color;
+    margin-bottom: 10px;
+
+    &-span {
+      font-weight: 700;
+      color: $white-color;
+    }
+  }
+
+  &__btn {
+    padding: 0;
+    width: 170px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__right {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: end;
+    flex-grow: 1;
+  }
+
+  &__lower {
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+  }
+
+  &__mail {
+    font-family: $second-font-family;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 135%;
+    color: $white-color;
+    margin-bottom: 9px;
+  }
+
+  &__phone {
+    font-family: $second-font-family;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 120%;
+    color: $white-color;
+  }
+
+
+}

@@ -1,0 +1,99 @@
+.priznaki {
+    margin: 0 0 160px 0;
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        gap: 20px;
+    }
+
+    &__title {
+        font-family: $first-font-family;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 120%;
+        color: $black-color-second;
+        margin-bottom: 12px;
+    }
+
+    &__desc {
+        font-family: $first-font-family;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 135%;
+        color: $black-color;
+        margin-bottom: 20px;
+    }
+
+    &__box {
+        background-color: $first-color;
+        padding: 20px 20px 25px;
+        border-radius: 20px;
+
+        &-wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 50%);
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        &-icon {
+            width: 50px;
+            height: 50px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin-bottom: 40px;
+        }
+
+        &-title {
+            font-family: $first-font-family;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 135%;
+            color: $white-color;
+            margin-bottom: 10px;
+        }
+
+        &-ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &-li {
+            width: 50%;
+            font-family: $first-font-family;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 115%;
+            color: $white-color;
+            margin-bottom: 10px;
+
+            &:before {
+                content: '- '
+            }
+        }
+    }
+
+    &__blue {
+        background-color: #36ADE3;
+        padding: 30px 0;
+        border-radius: 20px;
+
+        &-title {
+            font-family: $first-font-family;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 135%;
+            text-align: center;
+            color: $white-color;
+            max-width: 550px;
+            margin: 0 auto;
+        }
+    }
+}

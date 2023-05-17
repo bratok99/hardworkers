@@ -1,0 +1,28 @@
+// Заголовки, общие БЄМ блоки и проче...
+.container {
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.primary-title {
+    font-family: $first-font-family;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 110%;
+    color: $black-color;
+}
+
+.secondary-title {
+    font-family: $first-font-family;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 110%;
+    color: $white-color;
+}
+
+ul {
+    padding: 0;
+}

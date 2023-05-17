@@ -1,0 +1,56 @@
+.sixgrid {
+    margin: 0 0 164px 0;
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(2, 356px);
+        gap: 20px;
+    }
+
+    &__item {
+        padding: 20px;
+        border-radius: 20px 20px 0 0;
+        border: 1px solid $first-color;
+        border-bottom: none;
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &:nth-child(1),
+        &:nth-child(5) {
+            border: none;
+            border-radius: 20px;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            width: 1px;
+            top: 20px;
+            left: -1px;
+            height: calc(100% - 20px);
+            background-color: #fff;
+        }
+
+        &-title {
+            font-family: $first-font-family;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 135%;
+            color: $first-color;
+            margin-bottom: 15px;
+        }
+
+        &-desc {
+            font-family: $first-font-family;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 135%;
+            color: $black-color;
+        }
+    }
+}

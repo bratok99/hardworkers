@@ -1,0 +1,130 @@
+.address {
+    margin: 0 0 200px 0;
+
+    &__wrapper {
+        display: flex;
+
+        margin-top: 38px;
+    }
+
+    &__info {
+        margin-right: 70px;
+
+        &-metro {
+            &-wrapper {
+                margin-bottom: 30px;
+            }
+
+            &-title {
+                position: relative;
+                font-family: $first-font-family;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 120%;
+                color: $black-color-second;
+                margin-left: 40px;
+                margin-bottom: 10px;
+            }
+
+            &-title:before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: -40px;
+                width: 30px;
+                height: 20px;
+                background-image: url('../../../images/metro__icon.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+
+            &-desc {
+                font-family: $first-font-family;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 135%;
+                text-decoration-line: underline;
+                color: $black-color;
+            }
+
+            &-span {
+                font-weight: 700;
+            }
+        }
+
+        &-data {
+            &-wrapper {
+                margin-top: 5px;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 35px;
+                border: 1px solid $first-color;
+                border-radius: 20px 20px 0 0;
+                padding: 15px;
+                border-bottom: 0;
+                position: relative;
+            }
+
+            &-wrapper:before {
+                content: '';
+                position: absolute;
+                top: 35px;
+                left: -1px;
+                width: 1px;
+                height: 100%;
+                background-color: #fff;
+            }
+
+            &-wrapper:after {
+                content: '';
+                position: absolute;
+                top: 35px;
+                right: -1px;
+                width: 1px;
+                height: 100%;
+                background-color: #fff;
+            }
+
+            &-upper {
+                font-family: $first-font-family;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 135%;
+                color: $black-color;
+                text-decoration-line: none;
+            }
+
+            &-hours,
+            &-phone {
+                display: flex;
+                flex-direction: column;
+                font-family: $first-font-family;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 135%;
+                text-decoration-line: underline;
+                color: $black-color;
+            }
+        }
+
+    }
+
+    &__map {
+        &-wrapper {
+            width: 60%;
+        }
+
+        &-img {
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 100%;
+        }
+    }
+}

@@ -1,0 +1,99 @@
+.review {
+    background-color: $first-color;
+    padding: 100px 0;
+    margin: 0 0 100px 0;
+
+    &__wrapper {
+        margin: 50px 0 85px;
+    }
+
+    &__sliders-wrapper {
+        align-items: stretch !important;
+        padding-bottom: 30px;
+    }
+
+    &__item {
+        background-color: $gray-color;
+        border-radius: 20px;
+        padding: 24px 20px 20px;
+        position: relative;
+
+        &-upper {
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &-date {
+            font-family: $first-font-family;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 120%;
+            color: $black-color;
+            opacity: 0.5;
+        }
+
+        &-rating {
+            width: 120px;
+            height: 25px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        &-title {
+            font-family: $first-font-family;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 120%;
+            color: $black-color;
+            margin-bottom: 10px;
+        }
+
+        &-desc {
+            font-family: $first-font-family;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 140%;
+            color: $black-color;
+            margin-bottom: 75px;
+        }
+
+        &-btn {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            font-family: $first-font-family;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 140%;
+            color: $first-color;
+            text-align: right;
+            display: block;
+            text-decoration: underline;
+        }
+    }
+
+    &__btn {
+        &-wrapper {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+.review__wrapper .swiper-pagination {
+    bottom: 0px !important;
+}
+
+.review__wrapper .swiper-pagination-bullet {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.review__wrapper .swiper-pagination-bullet-active.swiper-pagination-bullet {
+    background-color: $white-color;
+}

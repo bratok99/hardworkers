@@ -1,0 +1,46 @@
+.history {
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        gap: 20px;
+        padding: 0 0 200px 0;
+    }
+
+    &__info {
+        background-color: transparent;
+        border-radius: 20px;
+
+        &-title {
+            font-family: $first-font-family;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 120%;
+            color: $black-color;
+            margin-bottom: 20px;
+
+            &-span {
+                color: $first-color;
+            }
+        }
+
+        &-desc {
+            font-family: $first-font-family;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 135%;
+            color: $black-color;
+            margin-bottom: 5px;
+        }
+
+    }
+
+    &__img {
+        min-height: 100%;
+        border-radius: 20px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
